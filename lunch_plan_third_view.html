@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NutriNest</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/footer.css">
+        <link rel="stylesheet" href="About_Us/aboutus.css">
+        <link rel="stylesheet" href="Services/services.css">
+        <link rel="stylesheet" href="Services/card.css">
+        <link rel="stylesheet" href="Plan/breakfast_plan.css">
+        <link rel="shortcut icon" href="Img/favicon_nutrinest.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    </head>
+    <body>
+        <!-- Navigation -->
+        <header class="main-header navbar navbar-expand-lg navbar-light py-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Img/logo_remove_bg-nutri.png" alt="Logo" class="logo">
+                    <p><span>Nutri</span>Nest</p>
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainOffcanvas" aria-controls="mainOffcanvas">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="mainOffcanvas" aria-labelledby="mainOffcanvasLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="mainOffcanvasLabel">NutriNest Menu</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto my-1">
+                            <li class="nav-item"><a class="main-nav__link nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="main-nav__link nav-link" href="aboutus.html">About Us</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="main-nav__link nav-link"
+                                    href="services.html"
+                                    id="servicesDropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    tabindex="0">
+                                Meal Plan <i class="bi bi-caret-down-fill"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                    <li><a class="dropdown-item" href="services.html"><i class="bi bi-fork-knife me-2"></i>Meal Plan</a></li>
+                                    <li><a class="dropdown-item" href="breakfast_plan.html"><i class="bi bi-sun me-2"></i>Breakfast Plan</a></li>
+                                    <li><a class="dropdown-item" href="lunch_plan_first_view.html"><i class="bi bi-egg-fried me-2"></i>Lunch Plan</a></li>
+                                    <li><a class="dropdown-item" href="dinner_plan_first_view.html"><i class="bi bi-moon me-2"></i>Dinner Plan</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="main-nav__link nav-link" href="faq.html">FAQ</a></li>
+                            <li class="nav-item"><a class="main-nav__link nav-link" href="contact.html">Contact Us</a></li>
+                        </ul>
+                        <form class="search-form d-flex mt-1 mb-2">
+                            <input class="search-input" type="search" placeholder="Search..." aria-label="Search">
+                            <button class="search-btn" type="submit">
+                            <i class="bi bi-search search-glass"></i>
+                            </button>
+                        </form>
+                        <button class="button type1 mt-1 mb-2">
+                        <a href="sign_in.html" class="btn-txt">Sign In</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="hero-section d-flex flex-column justify-content-center">
+            <div class="container">
+                <h1 class="display-5 fw-bold">Lunch Plan</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="in">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Lunch Plan</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+        <div class="container py-5">
+            <div class="row justify-content-center" id="page_1">
+                <div class="col-12 text-center mb-4">
+                    <h2 class="fw-bold">Lunch Plan For Male</h2>
+                </div>
+                <!-- Book 1 -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                    <div class="book">
+                        <div class="book-inner">
+                            <div class="cover">
+                                <img src="https://png.pngtree.com/png-vector/20250416/ourmid/pngtree-organic-fresh-green-cabbage-with-crisp-leaves-for-cooking-png-image_16007784.png" alt="Cabbage (steamed)" class="book_front_img">
+                                    <div class="element">
+                                        <h5>Nutrition Facts</h5>
+                                        <h6>Cabbage (steamed)</h6>
+                                        <p>100 g</p>
+                                    </div>
+                            </div>
+                            <div class="inside">
+                                <!-- Inside content -->
+                                <h6>Nutrition Facts</h6>
+                                <ul class="inside_element">
+                                    <li>Calories: 25 kcal</li>
+                                    <li>Carbs: 5.8 g</li>
+                                    <li>Fiber: 2.5 g</li>
+                                    <li>Fat:  0.1 g</li>
+                                    <li>Protein:  1.3 g</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Book 2 -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                    <div class="book">
+                        <div class="book-inner">
+                            <div class="cover">
+                                <img src="https://static.vecteezy.com/system/resources/previews/054/038/447/non_2x/boiled-edamame-soy-beans-with-sea-salt-and-sesame-seeds-orange-background-top-view-png.png" alt="Edamame (boiled)" class="book_front_img">
+                                <div class="element">
+                                    <h5>Nutrition Facts</h5>
+                                    <h6>Edamame (boiled)</h6>
+                                    <p>100 g</p>
+                                </div>
+                            </div>
+                            <div class="inside">
+                                <h6>Nutrition Facts</h6>
+                                <ul class="inside_element">
+                                    <li>Calories: 121 kcal</li>
+                                    <li>Carbs: 9 g</li>
+                                    <li>Fiber: 5.2 g</li>
+                                    <li>Fat: 5 g</li>
+                                    <li>Protein: 11 g</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Book 3 -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                    <div class="book">
+                        <div class="book-inner">
+                            <div class="cover">
+                                <img src="https://png.pngtree.com/png-clipart/20250124/original/pngtree-stir-fried-spinach-png-image_6778234.png" alt="Spinach (steamed)" class="book_front_img">
+                                <div class="element">
+                                    <h5>Nutrition Facts</h5>
+                                    <h6>Spinach (steamed)</h6>
+                                    <p>100 g</p>
+                                </div>
+                            </div>
+                            <div class="inside">
+                                <h6>Nutrition Facts</h6>
+                                <ul class="inside_element">
+                                    <li>Calories: 28 kcal</li>
+                                    <li>Carbs: 3.6 g</li>
+                                    <li>Fiber: 2.2 g</li>
+                                    <li>Fat: 0.4 g</li>
+                                    <li>Protein: 3 g</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                    <div class="book">
+                        <div class="book-inner">
+                            <div class="cover">
+                                <img src="https://www.prairiefarms.com/wp-content/uploads/2024/06/PF-24oz-COTTAGECHEESE-2024-2prct-1000x1000-1.png" alt="Cottage Cheese (low-fat)" class="book_front_img">
+                                    <div class="element">
+                                        <h5>Nutrition Facts</h5>
+                                        <h6>Cottage Cheese (low-fat)</h6>
+                                        <p>100 g</p>
+                                    </div>
+                            </div>
+                            <div class="inside">
+                                <!-- Inside content -->
+                                <h6>Nutrition Facts</h6>
+                                <ul class="inside_element">
+                                    <li>Calories: 98 kcal</li>
+                                    <li>Carbs: 3.4 g</li>
+                                    <li>Fiber: 0 g</li>
+                                    <li>Fat: 4.3 g</li>
+                                    <li>Protein: 11 g</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Book 2 -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                    <div class="book">
+                        <div class="book-inner">
+                            <div class="cover">
+                                <img src="https://png.pngtree.com/png-clipart/20240212/original/pngtree-baked-cod-loin-with-lettuce-healthy-photo-png-image_14302505.png" alt="Baked Cod" class="book_front_img">
+                                <div class="element">
+                                    <h5>Nutrition Facts</h5>
+                                    <h6>Baked Cod</h6>
+                                    <p>100 g</p>
+                                </div>
+                            </div>
+                            <div class="inside">
+                                <h6>Nutrition Facts</h6>
+                                <ul class="inside_element">
+                                    <li>Calories: 105 kcal</li>
+                                    <li>Carbs: 0 g</li>
+                                    <li>Fiber: 0 g</li>
+                                    <li>Fat: 1 g</li>
+                                    <li>Protein: 23 g</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Book 3 -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                    <div class="book">
+                        <div class="book-inner">
+                            <div class="cover">
+                                <img src="https://inghams.com.au/wp-content/uploads/2022/12/12161325301790-2.png" alt="Turkey Breast (roast)" class="book_front_img">
+                                <div class="element">
+                                    <h5>Nutrition Facts</h5>
+                                    <h6>Turkey Breast (roast)</h6>
+                                    <p>100 g</p>
+                                </div>
+                            </div>
+                            <div class="inside">
+                                <h6>Nutrition Facts</h6>
+                                <ul class="inside_element">
+                                    <li>Calories: 135 kcal</li>
+                                    <li>Carbs: 0 g</li>
+                                    <li>Fiber: 0 g</li>
+                                    <li>Fat: 1 g</li>
+                                    <li>Protein: 29 g</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5" id="page_2" id="page_2">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center mb-4">
+                    <h2 class="fw-bold">Lunch Plan For Female</h2>
+                </div>
+                <!-- Book 1 -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                    <div class="book">
+                        <div class="book-inner">
+                            <div class="cover">
+                                <img src="https://png.pngtree.com/png-vector/20240801/ourmid/pngtree-healthy-and-tasty-grilled-asparagus-with-salt-png-image_13321855.png" alt="Asparagus (steamed) " class="book_front_img">
+                                    <div class="element">
+                                        <h5>Nutrition Facts</h5>
+                                        <h6>Asparagus (steamed)  </h6>
+                                        <p>100 g</p>
+                                    </div>
+                            </div>
+                            <div class="inside">
+                                <!-- Inside content -->
+                                <h6>Nutrition Facts</h6>
+                                <ul class="inside_element">
+                                    <li>Calories: 22 kcal</li>
+                                    <li>Carbs: 3.9 g</li>
+                                    <li>Fiber: 2 g</li>
+                                    <li>Fat: 0.2 g</li>
+                                    <li>Protein: 2.4 g</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Book 2 -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                    <div class="book">
+                        <div class="book-inner">
+                            <div class="cover">
+                                <img src="https://png.pngtree.com/png-vector/20231014/ourmid/pngtree-green-peas-in-the-bowl-cutout-png-file-png-image_10158917.png" alt="Green Peas (boiled)" class="book_front_img">
+                                <div class="element">
+                                    <h5>Nutrition Facts</h5>
+                                    <h6>Green Peas (boiled)</h6>
+                                    <p>100 g</p>
+                                </div>
+                            </div>
+                            <div class="inside">
+                                <h6>Nutrition Facts</h6>
+                                <ul class="inside_element">
+                                    <li>Calories: 81 kcal</li>
+                                    <li>Carbs: 14 g</li>
+                                    <li>Fiber: 5.5 g</li>
+                                    <li>Fat: 0.4 g</li>
+                                    <li>Protein: 5 g</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Book 3 -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                    <div class="book">
+                        <div class="book-inner">
+                            <div class="cover">
+                                <img src="https://png.pngtree.com/png-clipart/20240321/original/pngtree-fresh-kailan-thai-call-kale-png-image_14641763.png" alt="Kale (steamed)" class="book_front_img">
+                                <div class="element">
+                                    <h5>Nutrition Facts</h5>
+                                    <h6>Kale (steamed)</h6>
+                                    <p>100 g</p>
+                                </div>
+                            </div>
+                            <div class="inside">
+                                <h6>Nutrition Facts</h6>
+                                <ul class="inside_element">
+                                    <li>Calories: 36 kcal</li>
+                                    <li>Carbs: 7.3 g</li>
+                                    <li>Fiber: 3.6 g</li>
+                                    <li>Fat: 0.5 g</li>
+                                    <li>Protein: 2.5 g</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                    <div class="book">
+                        <div class="book-inner">
+                            <div class="cover">
+                                <img src="https://static.vecteezy.com/system/resources/previews/047/490/650/non_2x/greek-yogurt-tub-with-spoon-isolated-on-transparent-background-free-png.png" alt="Greek Yogurt (plain)" class="book_front_img">
+                                <div class="element">
+                                    <div class="element">
+                                        <h5>Nutrition Facts</h5>
+                                        <h6>Greek Yogurt (plain)</h6>
+                                        <p>100 g</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inside">
+                                <!-- Inside content -->
+                                <h6>Nutrition Facts</h6>
+                                <ul class="inside_element">
+                                    <li>Calories: 59 kcal</li>
+                                    <li>Carbs: 3.6 g</li>
+                                    <li>Fiber: 0 g</li>
+                                    <li>Fat: 0.4 g</li>
+                                    <li>Protein: 10 g</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Book 2 -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                    <div class="book">
+                        <div class="book-inner">
+                            <div class="cover">
+                                <img src="https://png.pngtree.com/png-vector/20240913/ourmid/pngtree-tilapia-roasting-with-fire-transparent-background-png-image_13823477.png" alt="Tilapia (grilled)" class="book_front_img">
+                                <div class="element">
+                                    <h5>Nutrition Facts</h5>
+                                    <h6>Tilapia (grilled)</h6>
+                                    <p>100 g</p>
+                                </div>
+                            </div>
+                            <div class="inside">
+                                <h6>Nutrition Facts</h6>
+                                <ul class="inside_element">
+                                    <li>Calories: 128 kcal</li>
+                                    <li>Carbs: 0 g</li>
+                                    <li>Fiber: 0 g</li>
+                                    <li>Fat: 2.7 g</li>
+                                    <li>Protein: 26 g</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Book 3 -->
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                    <div class="book">
+                        <div class="book-inner">
+                            <div class="cover">
+                                <img src="https://static.vecteezy.com/system/resources/previews/035/983/272/non_2x/ai-generated-colorful-fresh-bell-peppers-isolated-on-a-white-or-transparent-background-free-png.png" alt="Bell Peppers (raw)" class="book_front_img">
+                                <div class="element">
+                                    <h5>Nutrition Facts</h5>
+                                    <h6>Bell Peppers (raw)</h6>
+                                    <p>100 g</p>
+                                </div>
+                            </div>
+                            <div class="inside">
+                                <h6>Nutrition Facts</h6>
+                                <ul class="inside_element">
+                                    <li>Calories: 31 kcal</li>
+                                    <li>Carbs: 6 g</li>
+                                    <li>Fiber: 2.1 g</li>
+                                    <li>Fat: 0.3 g</li>
+                                    <li>Protein: 1 g</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <nav class="col-12 pigination_bar d-flex justify-content-center">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="lunch_plan_third_view.html" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="lunch_plan_first_view.html">1</a></li>
+                        <li class="page-item"><a class="page-link" href="lunch_plan_second_view.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="lunch_plan_third_view.html">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="lunch_plan_first_view.html" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <footer class="text-dark py-5">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-md-4">
+                        <a href="#" class="d-inline-block mb-4">
+                        <img src="Img/logo_remove_bg-nutri.png" alt="Logo" height="80">
+                        </a>
+                        <p class="fs-5 text-muted mb-4">
+                            Wellness begins on your plate. Discover fresh recipes and smart habits<br>
+                            that make healthy living easy and enjoyable.
+                        </p>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="btn btn-dark btn-lg"><i class="bi bi-apple"></i> App Store</a>
+                            <a href="#" class="btn btn-outline-secondary btn-lg"><i class="bi bi-android2"></i> Play Store</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-6">
+                                <h5 class="fw-bold mb-4 section-title">Pages</h5>
+                                <ul class="list-unstyled fs-6">
+                                    <li class="mb-3"><a href="index.html" class="text-decoration-none footer_links">Home</a></li>
+                                    <li class="mb-3"><a href="aboutus.html" class="text-decoration-none footer_links">About Us</a></li>
+                                    <li class="mb-3"><a href="services.html" class="text-decoration-none footer_links">Meal Plan</a></li>
+                                    <li class="mb-3"><a href="faq.html" class="text-decoration-none footer_links">FAQ</a></li>
+                                    <li><a href="contact.html" class="text-decoration-none footer_links">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <h5 class="fw-bold mb-4 section-title">Utility Pages</h5>
+                                <ul class="list-unstyled fs-6">
+                                    <li class="mb-3"><a href="sign_in.html" class="text-decoration-none footer_links">Sign_In</a></li>
+                                    <li class="mb-3"><a href="sign_up.html" class="text-decoration-none footer_links">Sign_Up</a></li>
+                                    <li class="mb-3"><a href="privacy_policy.html" class="text-decoration-none footer_links">Privacy Policy</a></li>
+                                    <li class="mb-3"><a href="term of services.html" class="text-decoration-none footer_links">Term of Services</a></li>
+                                    <li><a href="references.html" class="text-decoration-none footer_links">Reference</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body py-4 px-4">
+                                <small class="color_change text-uppercase fs-6">Address</small>
+                                <h4 class="card-title mt-2 mb-3">Ready To Get Started?</h4>
+                                <p class="fs-6 text-muted mb-2">
+                                    No.483, Aye Yeik Thar Condo 9C, Aye Yeik Thar 2nd Street, Sayarsan Quarter, Bahan Township
+                                </p>
+                                <ul class="list-unstyled fs-6">
+                                    <li class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-envelope-fill color_change me-3 fs-4"></i>
+                                        <a href="mailto:contact.tech@gmail.com" class="text-decoration-none text-muted">info@edusn.co.uk</a>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-envelope-fill color_change me-3 fs-4"></i>
+                                        <a href="mailto:info@niotech.com" class="text-decoration-none text-muted email">nutrinest08@gmail.com</a>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-telephone-fill color_change me-3 fs-4"></i>
+                                        <span class="text-muted">+65 0993979537</span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="bi bi-telephone-fill color_change me-3 fs-4"></i>
+                                        <span class="text-muted">+95 09785008911</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bottom Bar -->
+                <div class="row mt-5 pt-4 border-top">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0 fs-6">
+                        &#169; 2025 Fuchsia Fantastic Four. All Rights Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end fs-5">
+                        <a href="https://www.facebook.com/share/16bZNPtM7s/?mibextid=wwXIfr" class="text-muted me-4"><i class="bi bi-facebook bottom_icons"></i></a>
+                        <a href="https://x.com/nutrinest08?s=21" class="text-muted me-4"><i class="fa-brands fa-x-twitter bottom_icons"></i></a>
+                        <a href="https://www.instagram.com/nutrinest08?igsh=MWhzYzgzY2tnbWU1ZQ%3D%3D&utm_source=qr" class="text-muted"><i class="bi bi-instagram bottom_icons"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/b3928d282b.js" crossorigin="anonymous"></script>
+    </body>
+</html>
