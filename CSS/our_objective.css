@@ -1,0 +1,211 @@
+:root {
+	--Mint_Whisper: #e8ffe4;
+	--Frosted_Lime: #caffc4;
+	--Fresh_Spring: #9aff90;
+	--Bright_Meadow: #59ff50;
+	--Neon_Leaf: #25ff22;
+	--Pure_Green: #00e603;
+	--Vivid_Emerald: #00b807;
+	--Deep_Emerald: #008b05;
+	--Forest_Canopy: #076d0c;
+	--Dark_Forest: #0b5c10;
+	--Midnight_Pine: #003406;
+	--Dewdrop: #E4F5E3;
+	--Fresh_Herb: #6BBF69;
+	--Mossy_Stone: #368835;
+	--Deep_Forest_Night: #0E250E;
+}
+
+.nutrine-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.nutrine-title {
+	font-size: 2.2rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	color: #0b5c10;
+	letter-spacing: 1px;
+}
+
+.nutrine-desc {
+	font-size: 1.06rem;
+	color: #25532c;
+	margin-bottom: 2rem;
+}
+
+.nutrine-row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -0.75rem;
+	margin-right: -0.75rem;
+}
+
+.nutrine-col-main {
+	flex: 0 0 66.6667%;
+	max-width: 66.6667%;
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+}
+
+.nutrine-col-side {
+	flex: 0 0 33.3333%;
+	max-width: 33.3333%;
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+}
+
+.nutrine-feature-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0 0.5rem;
+}
+
+.nutrine-feature-card {
+	position: relative;
+	padding: 2rem 1.5rem;
+	background: whitesmoke;
+	border-radius: 1rem;
+	margin-bottom: 1.5rem;
+	clip-path: polygon(0% 0%, calc(100% - 2.5rem) 0%, 100% 2.5rem, 100% 100%, 0% 100%);
+	color: #0b7023;
+	box-shadow: 0 2px 14px rgba(45,80,60,0.07);
+	transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	border: none;
+	min-height: 215px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+.nutrine-feature-card.nutrine-active,
+.nutrine-feature-card:hover {
+	background: #d8ffd7;
+	color: #0b7023;
+	box-shadow: 0 4px 24px rgba(45,80,60,0.12);
+}
+
+.nutrine-feature-icon {
+	font-size: 2.1rem;
+	margin-bottom: 1rem;
+}
+
+.nutrine-feature-title {
+	font-weight: 700;
+	font-size: 1.25rem;
+	margin-bottom: 0.5rem;
+	color: #0b7023;
+}
+
+.nutrine-feature-desc {
+	color: #24662f;
+	font-size: 1rem;
+	margin-bottom: 0;
+}
+
+.nutrine-card-info {
+	background-color: #fff;
+	border-radius: 1rem;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	padding: 2rem 1.5rem 1.5rem 1.5rem;
+	margin-top: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	min-height: 520px;
+}
+
+.nutrine-card-title {
+	font-weight: 700;
+	font-size: 1.4rem;
+	color: #0b5c10;
+	letter-spacing: 1px;
+	margin-bottom: 1rem;
+}
+
+.nutrine-card-image {
+	width: 100%;
+	max-width: 360px;
+	height: auto;
+	border-radius: 1rem;
+	object-fit: cover;
+	margin-bottom: 1.25rem;
+	display: block;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nutrine-card-list {
+	margin: 1.25rem 0 1.5rem 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nutrine-card-list-item {
+	font-size: 1rem;
+	line-height: 1.7;
+	margin-bottom: 0.5rem;
+	display: flex;
+	align-items: center;
+}
+
+.nutrine-check-icon {
+	font-size: 1.25rem;
+	margin-right: 0.5rem;
+	color: #25ff22;
+}
+@media (max-width: 992px) {
+	.nutrine-col-main, .nutrine-col-side {
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding: 10px;
+	}
+	.nutrine-card-info {
+		min-height: unset;
+		margin-top: 2rem;
+	}
+	.nutrine-row {
+		gap: 0.5rem 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.nutrine-container {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+	.nutrine-feature-card, .nutrine-card-info {
+		padding: 1rem;
+	}
+	.nutrine-card-image {
+		max-width: 100%;
+		aspect-ratio: 16 / 9;
+	}
+	.nutrine-row {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 480px) {
+	.nutrine-title {
+		font-size: 1.35rem;
+	}
+	.nutrine-card-title {
+		font-size: 1.1rem;
+	}
+	.nutrine-card-image {
+		aspect-ratio: 16/10;
+	}
+	.nutrine-feature-card {
+		padding: 1rem 0.5rem;
+		font-size: 0.95rem;
+	}
+	.nutrine-card-info {
+		padding: 1rem 0.5rem;
+	}
+}
